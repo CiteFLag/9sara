@@ -68,12 +68,14 @@ https://www.mediafire.com/file/mln0nqinstp4j0n/Archive.rar/file
    !invite webhookurl
    ```
 
-   Here’s an example implemented in Python:
+   Here’s an example implemented in [Python](send.py)
 
+   solve:
+   
    ![ss](../../assets/{FB11A51D-2C5B-48C8-B08A-9E961BA158BD}.png)
    ![sxs](../../assets/image.png)
 
-6. **Retrieving the Flag**
+7. **Retrieving the Flag**
 
 
    Accessing the server via the invite link reveals the secret flag:
