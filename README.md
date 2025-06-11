@@ -20,8 +20,8 @@ An intense 6-hour online cybersecurity marathon spanning multiple domains. This 
 
 - [L4](./misc/L4/) — 2 solves  
 - [Nota](./misc/Nota/) — 0 solves  
-- [Sanity Check](./misc/Sanity_Check/) — 9 solves  
-- [The Pixel Lies](./misc/The_Pixel_Lies/) — 0 solves  
+- [Sanity Check](./misc/Sanity%20Check/) — 9 solves  
+- [The Pixel Lies](./misc/The%20Pixel%20Lies/) — 0 solves  
 - [Welcome ?](./misc/Welcome/) — 7 solves  
 
 </details>
@@ -30,36 +30,36 @@ An intense 6-hour online cybersecurity marathon spanning multiple domains. This 
 <summary>🔐 Cryptography (3)</summary>
 
 - [Enigma](./crypto/Enigma/) — 2 solves  
-- [Prime Factor](./crypto/Prime_Factor/) — 4 solves  
-- [xES 256](./crypto/xES_256/) — 0 solves  
+- [Prime Factor](./crypto/Prime%20Factor/) — 4 solves  
+- [xES 256](./crypto/xES%20256/) — 0 solves  
 
 </details>
 
 <details>
 <summary>💥 Pwn / Binary Exploitation (4)</summary>
 
-- [Echo Chamber](./pwn/Echo_Chamber/) — 0 solves  
-- [Locked & Loaded](./pwn/Locked_and_Loaded/) — 0 solves  
-- [Memory Painter](./pwn/Memory_Painter_Super_Saiyen/) — 0 solves
-- [Super Saiyen](./pwn/Super_Saiyen/) - 3 solves
+- [Echo Chamber](./pwn/Echo%20Chamber/) — 0 solves  
+- [Locked & Loaded](./pwn/Locked%20&%20Loaded/) — 0 solves  
+- [Memory Painter](./pwn/Memory%20Painter/) — 0 solves
+- [Super Saiyen](./pwn/Super%20Saiyen/) - 3 solves
 
 </details>
 
 <details>
 <summary>🌐 Web Security (3)</summary>
 
-- [L9owa Lghachima](./web/L9owa_Lghachima/) — 2 solves  
-- [Secure Corp](./web/Secure_Corp/) — 1 solve  
-- [Session Splinter](./web/Session_Splinter/) — 1 solve  
+- [L9owa Lghachima](./web/L9owa%20Lghachima/) — 2 solves  
+- [Secure Corp](./web/Secure%20Corp/) — 1 solve  
+- [Session Splinter](./web/Session%20splinter/) — 1 solve  
 
 </details>
 
 <details>
 <summary>🔄 Reverse Engineering (3)</summary>
 
-- [Crack Me](./reverse/Crack_Me/) — 2 solves  
-- [Matrix Decoder](./reverse/Matrix_Decoder/) — 2 solves  
-- [Piggy Bank 🐷](./reverse/Piggy_Bank/) — 8 solves  
+- [Crack Me](./reverse/crack%20Me/) — 2 solves  
+- [Matrix Decoder](./reverse/matrix%20decoder/) — 2 solves  
+- [Piggy Bank 🐷](./reverse/piggy%20bank/) — 8 solves  
 
 </details>
 
@@ -67,8 +67,8 @@ An intense 6-hour online cybersecurity marathon spanning multiple domains. This 
 <summary>🔍 Forensics (4)</summary>
 
 - [CNSS](./forensics/CNSS/) — 7 solves  
-- [Rafi9 Ragnarok](./forensics/Rafi9_Ragnarok/) — 0 solves  
-- [Sa3a f Ljahim](./forensics/Sa3a_f_Ljahim/) — 0 solves  
+- [Rafi9 Ragnarok](./forensics/Rafi9%20Ragnarok/) — 0 solves  
+- [Sa3a f Ljahim](./forensics/Sa3a%20f%20Ljahim/) — 0 solves  
 - [Skuld](./forensics/Skuld/) — 0 solves  
 
 </details>
@@ -84,7 +84,7 @@ An intense 6-hour online cybersecurity marathon spanning multiple domains. This 
 <summary>🕵️ OSINT (4)</summary>
 
 - [ANCFCC](./osint/ANCFCC/) — 1 solve  
-- [Hidden Below](./osint/Hidden_Below/) — 0 solves  
+- [Hidden Below](./osint/Hidden%20Below/) — 0 solves  
 - [Lbahara](./osint/Lbahara/) — 1 solve  
 - [Lhusin](./osint/Lhusin/) — 3 solves  
 
