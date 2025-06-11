@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error - Government Identity Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #333;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+    .logo h1 {
+      margin: 0;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .error-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    .error-icon {
+      font-size: 72px;
+      margin-bottom: 20px;
+      color: #d32f2f;
+    }
+    h2 {
+      color: #d32f2f;
+      margin-bottom: 20px;
+    }
+    .error-message {
+      color: #666;
+      margin-bottom: 25px;
+    }
+    .back-button {
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .back-button:hover {
+      background-color: #1976d2;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>🏛️</span>
+      <h1>Government Identity Portal</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="error-card">
+      <div class="error-icon">⚠️</div>
+      <h2>Access Denied</h2>
+      <div class="error-message">
+        <p><%= message || 'You do not have permission to access this resource.' %></p>
+        <p>Please verify your access privileges or contact the system administrator.</p>
+      </div>
+      <a href="/" class="back-button">Return to Dashboard</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2025 Government Identity Management Division</p>
+  </footer>
+</body>
+</html> 

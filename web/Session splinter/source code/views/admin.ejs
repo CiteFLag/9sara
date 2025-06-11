@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Identity Portal - Admin Panel</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+    .logo h1 {
+      margin: 0;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 25px;
+      margin-bottom: 20px;
+    }
+    .admin-header {
+      background-color: #b71c1c;
+      color: white;
+      padding: 15px;
+      border-radius: 8px 8px 0 0;
+    }
+    .admin-content {
+      padding: 20px;
+    }
+    .admin-warning {
+      color: #d32f2f;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .record-box {
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 15px;
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+    .encrypted-data {
+      font-family: monospace;
+      word-break: break-all;
+      color: #444;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+      border-bottom: 1px dashed #eee;
+      padding-bottom: 10px;
+    }
+    .info-label {
+      font-weight: 500;
+      color: #666;
+    }
+    .info-value {
+      font-weight: 400;
+    }
+    .admin-footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>⚠️</span>
+      <h1>Admin Panel - RESTRICTED ACCESS</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Dashboard</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <div class="admin-header">
+        <h2>System Administration</h2>
+        <p>Welcome, Administrator <%= user.name %></p>
+      </div>
+      
+      <div class="admin-content">
+        <div class="admin-warning">
+          <p>⚠️ This area is restricted. All actions are being audited.</p>
+        </div>
+        
+        <h3>Administrator Information</h3>
+        <div class="info-row">
+          <span class="info-label">Username:</span>
+          <span class="info-value"><%= user.username %></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Access Level:</span>
+          <span class="info-value"><%= user.role %></span>
+        </div>
+        
+        <h3>Root Record (Encrypted)</h3>
+        <div class="record-box">
+          <div class="encrypted-data"><%= encryptedRecord %></div>
+        </div>
+        
+        <p>To decrypt this record, use OpenSSL AES-256-CBC with the system master key.</p>
+      </div>
+    </div>
+    
+    <div class="admin-footer">
+      <p>Government Identity Portal - Secure Administration System</p>
+      <p>Remember: The system trusts itself too much. Look into how it reassembles what's already known.</p>
+    </div>
+  </div>
+</body>
+</html> 

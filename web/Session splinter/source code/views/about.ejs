@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Identity Portal - About</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #1e88e5;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+    .logo h1 {
+      margin: 0;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 25px 35px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    h2 {
+      color: #1e88e5;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .highlighted {
+      background-color: #f0f7ff;
+      padding: 15px;
+      border-left: 4px solid #1e88e5;
+      margin: 20px 0;
+    }
+    .system-specs {
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      padding: 15px;
+      font-family: monospace;
+      margin: 20px 0;
+      white-space: pre-wrap;
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+    .secret-hint {
+      color: rgba(0,0,0,0.03); /* Almost invisible text */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>🏛️</span>
+      <h1>Government Identity Portal</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <h2>About the Identity Portal</h2>
+      
+      <p>The Government Identity Portal is a secure system for managing citizen identity information. Our revolutionary "Quantum Session Splitting" technology provides unparalleled security for sensitive government data.</p>
+      
+      <div class="highlighted">
+        <h3>Quantum Session Splitting Technology</h3>
+        <p>Our system divides authentication tokens into three separate quantum-entangled parts, making it impossible for attackers to compromise the system.</p>
+      </div>
+      
+      <h3>System Architecture</h3>
+      <p>The portal uses a cutting-edge authentication system with signature verification and encrypted storage. All sensitive data is encrypted with AES-256-CBC using our proprietary key generation system.</p>
+      
+      <div class="system-specs">
+System Specifications:
+- Node.js/Express platform
+- JWT-based authentication
+- Quantum session splitting
+- Multi-layered verification
+- <%= hint %> <!-- Hidden hint: All secrets start with 🇲🇦 + 2025-->
+      </div>
+      
+      <h3>Security Notice</h3>
+      <p>This system is designed for authorized government personnel only. Unauthorized access attempts will be prosecuted to the full extent of the law.</p>
+      
+      <p class="secret-hint">Debugging flags: JWT_NONE_CHECK=false, CACHE_HEADERS=true, STRICT_VERIFICATION=false</p>
+    </div>
+    
+    <footer>
+      <p>© 2025 Government Identity Management Division</p>
+    </footer>
+  </div>
+</body>
+</html> 
