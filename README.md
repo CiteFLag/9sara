@@ -101,7 +101,7 @@ An intense 6-hour online cybersecurity marathon spanning multiple domains. This 
 
 **Organizers**  
 - xtle0o0  
-- reo-x
+- Reo-0x
 
 ---
 
